@@ -7,9 +7,9 @@ pipeline {
     environment {
         //PATH = "C:\\Program Files\\Docker\\Docker\\resources\\bin;${env.PATH}"
 
-        path="C:\\users\\aatus\\AppData\\local\\Programs\\DockerDesktop\\resources\\bin;${env.PATH}"
+        PATH="C:\\users\\aatus\\AppData\\local\\Programs\\DockerDesktop\\resources\\bin;${env.PATH}"
         DOCKERHUB_CREDENTIALS_ID = 'docker_id'
-        DOCKERHUB_REPO = 'Fliits/cal1_3012_2026'
+        DOCKERHUB_REPO = 'fliits/cal1_3012_2026'
         DOCKER_IMAGE_TAG = 'v1'
     }
     stages {
