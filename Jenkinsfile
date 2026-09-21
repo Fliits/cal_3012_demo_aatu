@@ -5,15 +5,15 @@ pipeline {
     }
 
     environment {
-        PATH = "C:\\Program Files\\Docker\\Docker\\resources\\bin;${env.PATH}"
-        DOCKERHUB_CREDENTIALS_ID = 'Docker_Hub'
-        DOCKERHUB_REPO = 'amirdirin/cal1_3012_2026'
+        //PATH = "C:\\Program Files\\Docker\\Docker\\resources\\bin;${env.PATH}"
+        DOCKERHUB_CREDENTIALS_ID = 'docker_id'
+        DOCKERHUB_REPO = 'fliits/cal1_3012_2026'
         DOCKER_IMAGE_TAG = 'v1'
     }
     stages {
         stage ('check'){
             steps{
-                git 'https://github.com/ADirin/cal_3012_demo.git'
+                git 'https://github.com/Fliits/cal_3012_demo_aatu.git'
             }
         }
         stage ('build'){
